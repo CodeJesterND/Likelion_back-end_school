@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계절 판별하기</title>
+</head>
+
+<body>
+    <h1>계절 판별하기</h1>
+
+    <script>
+        // 사용자로부터 월을 입력받습니다.
+        let month = prompt("월을 입력하세요: ");
+
+        // 입력받은 월에 따라 계절을 판별하고 출력합니다.
+        switch (parseInt(month)) {
+            case 12:
+            case 1:
+            case 2:
+                document.write("겨울입니다.");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                document.write("봄입니다.");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                document.write("여름입니다.");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                document.write("가을입니다.");
+                break;
+            default:
+                document.write("잘못된 월을 입력하셨습니다.");
+        }
+    </script>
+</body>
+
+</html>
