@@ -1,4 +1,4 @@
-package com.example.day05;
+package march.day25;
 
 public class VendingMachine {
     public String pushProductButton(int menuId){

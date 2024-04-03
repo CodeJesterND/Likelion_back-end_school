@@ -34,6 +34,6 @@ public class ClassTest extends ClassB{
         System.out.println(false);
         System.out.println('a');
 
-        com.example.day05.ClassTest test22 = new com.example.day05.ClassTest();
+        march.day25.ClassTest test22 = new march.day25.ClassTest();
     }
 }

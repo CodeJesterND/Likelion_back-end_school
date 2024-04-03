@@ -1,4 +1,4 @@
-package com.example.day05;
+package march.day25;
 
 public class ClassTest {
     public void print(ClassB b){

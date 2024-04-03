@@ -1,4 +1,4 @@
-package com.example.day05;
+package march.day25;
 
 public class Dice {
 //속성 - 주사위의 면을 나타내는 face  - 던졌을때 나오는 눈을 나타내는  eye

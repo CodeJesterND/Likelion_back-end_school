@@ -1,4 +1,4 @@
-package com.example.day05;
+package march.day25;
 
 public class ClassB {
     public String name = "kang";

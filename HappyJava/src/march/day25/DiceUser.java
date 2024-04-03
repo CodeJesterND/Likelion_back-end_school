@@ -1,4 +1,4 @@
-package com.example.day05;
+package march.day25;
 
 public class DiceUser {
     //주사위를 n 번 굴려서 나오는 눈이 x 와 같은 횟수를 보여주세요.
