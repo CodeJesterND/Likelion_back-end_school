@@ -1,9 +1,5 @@
 package march.day25;
 
-import com.example.day05.*;
-import com.example.day05.tset.*;
-//import com.*;
-
 public class ClassTest extends ClassB{
     public void print(ClassTest b){
 
