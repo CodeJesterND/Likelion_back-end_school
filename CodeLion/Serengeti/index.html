@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko"> // 언어가 en인 경우 '한글로 번역하시겠습니까?'라는 창이 뜰 수 있다.
+
+// head : 컨텐츠의 정보를 입력하는 공간
+
+<head>
+    <meta charset="UTF-8"> // 나는 한글을 사용하겠다고 선언
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> // 사이트 제목
+    // bootstrap(v4.5)을 다운로드 하기 위한 코드
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    // css 파일과 연결하기 위한 코드
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="container">
+    // 3개의 ariticle로 구성되어 있음
+    // 초기 화면을 보여주는 article
+    <article class="start">
+        <h1 class="mt-5 text-center">나랑 꼭 닮은 세렝게티 동물은?</h1>
+        // mt-5는 margin-top으로 위 여백을 5px로 설정
+        // onclick을 통하여 버튼을 클릭시 start();함수가 실행되도록 설정
+        <button type="button" class="btn btn-primary mt-5" onclick='start();'>테스트 시작하기</button>
+    </article>
+
+    // 문제를 나타내는 article
+    <article class="question">
+        // bootstrap에서 프로그래스바를 가져옴, 위 여백 5(mt-5)
+        <div class="progress mt-5">
+            <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)"></div>
+        </div> // 12문제로 구성되어 있음 프로그래스바를 12로 나누어 출력
+        <h2 id="title" class="text-center mt-5">문제</h2>
+        <input id="type" type="hidden" value="EI">
+        <button id="A" type="button" class="btn btn-primary mt-5">Primary</button>
+        <button id="B" type="button" class="btn btn-primary mt-5">Primary</button>
+    </article>
+
+    // 마지막 결과창을 나타내는 article
+    <article class="result">
+        <img id="img" class="rounded-circle mt-5" src="lion.jpg" alt="animal">
+        <h2 id="animal" class="text-center mt-5">동물이름</h2>
+        <h3 id="explain" class="text-center mt-5">설명</h3>
+    </article>
+
+    // 화면에 보여지지 않는 값을 입력하기 위하여 input 사용
+    <input type="hidden" id="EI" value="0">
+    <input type="hidden" id="SN" value="0">
+    <input type="hidden" id="TF" value="0">
+    <input type="hidden" id="JP" value="0">
+
+    // BootStrap 기능 중엔 jQuery를 이용하여 동적으로 나타낸 기능도 있기 때문에 JavaScript 코드도 필요함(Bootstrap에서 복사하여 '/body'위에 붙여넣기
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // 문제 번호를 나타내는 변수 정의
+        var num = 1;
+
+        // 문제 객체 생성 
+        var q = {
+            1: { "title": "문제 1번", "type": "EI", "A": "E", "B": "I" },
+            2: { "title": "문제 2번", "type": "EI", "A": "E", "B": "I" },
+            3: { "title": "문제 3번", "type": "EI", "A": "E", "B": "I" },
+            4: { "title": "문제 4번", "type": "SN", "A": "S", "B": "N" },
+            5: { "title": "문제 5번", "type": "SN", "A": "S", "B": "N" },
+            6: { "title": "문제 6번", "type": "SN", "A": "S", "B": "N" },
+            7: { "title": "문제 7번", "type": "TF", "A": "T", "B": "F" },
+            8: { "title": "문제 8번", "type": "TF", "A": "T", "B": "F" },
+            9: { "title": "문제 9번", "type": "TF", "A": "T", "B": "F" },
+            10: { "title": "문제 10번", "type": "JP", "A": "J", "B": "P" },
+            11: { "title": "문제 11번", "type": "JP", "A": "J", "B": "P" },
+            12: { "title": "문제 12번", "type": "JP", "A": "J", "B": "P" }
+        }
+
+        // 결과 객체 생성
+        var result = {
+            "ISTJ": { "animal": "하마", "explain": "하마 설명", "img": "lion.jpg" },
+            "ISFJ": { "animal": "부엉이", "explain": "부엉이 설명", "img": "lion.jpg" },
+            "INFJ": { "animal": "물소", "explain": "물소 설명", "img": "lion.jpg" },
+            "INTJ": { "animal": "치타", "explain": "치타 설명", "img": "lion.jpg" },
+            "ISTP": { "animal": "나무늘보", "explain": "나무늘보 설명", "img": "lion.jpg" },
+            "ISFP": { "animal": "거북이", "explain": "거북이 설명", "img": "lion.jpg" },
+            "INFP": { "animal": "코끼리", "explain": "코끼리 설명", "img": "lion.jpg" },
+            "INTP": { "animal": "침팬지", "explain": "침팬지 설명", "img": "lion.jpg" },
+            "ESTP": { "animal": "악어", "explain": "악어 설명", "img": "lion.jpg" },
+            "ESFP": { "animal": "미어캣", "explain": "미어캣 설명", "img": "lion.jpg" },
+            "ENFP": { "animal": "멋쟁이 사자", "explain": "멋쟁이 사자 설명", "img": "lion.jpg" },
+            "ENTP": { "animal": "태양새", "explain": "태양새 설명", "img": "lion.jpg" },
+            "ESTJ": { "animal": "기린", "explain": "기린 설명", "img": "lion.jpg" },
+            "ESFJ": { "animal": "고릴라", "explain": "고릴라 설명", "img": "lion.jpg" },
+            "ENFJ": { "animal": "카피바라", "explain": "카피바라 설명", "img": "lion.jpg" },
+            "ENTJ": { "animal": "호랑이", "explain": "호랑이 설명", "img": "lion.jpg" }
+        }
+
+        // start 화면에서 버튼 클릭시 start 화면이 사라지고 question 화면이 나타나게 함수 정의
+        function start() {
+            $(".start").hide();
+            $(".question").show();
+            next();
+        }
+
+        // A버튼 클릭시 앞 알파벳의 값이 1 증가하고 다음 문제로 넘어가는 함수 정의 
+        $("#A").click(function () {
+            var type = $("#type").val();
+            var preValue = $("#" + type).val();
+            $("#" + type).val(parseInt(preValue) + 1);
+            next();
+        });
+
+        // B버튼 클릭시 그냥 다음 문제로 넘어가게 함수 정의 
+        $("#B").click(function () {
+            next();
+        });
+
+        // 다음으로 넘어가는 함수 정의, 12문제로 구성되어 있어 num이 13인 경우 question화면이 사라지고 result화면이 나타나게 if문 사용
+        // 삼항연산자로 앞 알파벳의 점수가 2보다 작은 경우 뒷 알파벳이, 2보다 크거나 같ㅇ으면 앞 알파벳이 mbti 변수에 더해지도록 코딩 
+        // 각 mbti에 따라 사진, 동물, 설명이 출력되게끔 객체와 키를 이용하여 설명 
+        // .attr();은 css를 변경하는 bootstrap 코드 
+        // .html();은 태그 안의 내용을 변경하는 bootstrap 코드 
+        // num이 12보다 작은 경우 문제번호, 버튼 텍스트, 타입이 q 객체에 따라 변경되도록 코딩
+        function next() {
+            if (num == 13) {
+                $(".question").hide();
+                $(".result").show();
+                var mbti = "";
+                ($("#EI").val() < 2) ? mbti += "I" : mbti += "E";
+                ($("#SN").val() < 2) ? mbti += "N" : mbti += "S";
+                ($("#TF").val() < 2) ? mbti += "F" : mbti += "T";
+                ($("#JP").val() < 2) ? mbti += "P" : mbti += "J";
+                $("#img").attr("src", result[mbti]["img"]);
+                $("#animal").html(result[mbti]["animal"]);
+                $("#explain").html(result[mbti]["explain"]);
+            } else {
+                $(".progress-bar").attr('style', 'width: calc(100/12*' + num + '%)');
+                $("#title").html(q[num]["title"]);
+                $("#type").val(q[num]["type"]);
+                $("#A").html(q[num]["A"]);
+                $("#B").html(q[num]["B"]);
+                num++;
+            }
+        }
+    </script>
+</body>
+
+</html>
