@@ -1,4 +1,4 @@
-package com.example.day07;
+package april.day09;
 
 public class Triangle extends Shape{
     private double base;

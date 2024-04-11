@@ -1,4 +1,4 @@
-package com.example.day07;
+package april.day09;
 
 public class ABC extends Object{
 

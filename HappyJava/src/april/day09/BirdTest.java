@@ -1,4 +1,4 @@
-package com.example.day07;
+package april.day09;
 
 public class BirdTest {
     public static void main(String[] args) {

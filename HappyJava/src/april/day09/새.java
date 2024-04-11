@@ -1,4 +1,4 @@
-package com.example.day07;
+package april.day09;
 
 abstract public class 새 {
     //기능의 표준화.
