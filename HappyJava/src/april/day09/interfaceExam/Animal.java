@@ -1,4 +1,4 @@
-package com.example.day07.interfaceExam;
+package april.day09.interfaceExam;
 
 public interface Animal {
     int AGE = 1; //상수

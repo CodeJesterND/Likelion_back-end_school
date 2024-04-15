@@ -1,4 +1,4 @@
-package com.example.day07.interfaceExam;
+package april.day09.interfaceExam;
 
 public class AnimalDemo {
     public static void main(String[] args) {

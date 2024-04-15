@@ -1,4 +1,4 @@
-package com.example.day07.interfaceExam;
+package april.day09.interfaceExam;
 
 public class Car implements Vehicle{
     private int speed;

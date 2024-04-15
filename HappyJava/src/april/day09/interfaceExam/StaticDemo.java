@@ -1,6 +1,4 @@
-package com.example.day07.interfaceExam;
-
-import java.util.concurrent.Callable;
+package april.day09.interfaceExam;
 
 public class StaticDemo {
     public static void main(String[] args) {

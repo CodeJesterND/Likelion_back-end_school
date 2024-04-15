@@ -1,4 +1,4 @@
-package com.example.day07.interfaceExam;
+package april.day09.interfaceExam;
 
 public interface Calculator {
     static int add(int a, int b){
