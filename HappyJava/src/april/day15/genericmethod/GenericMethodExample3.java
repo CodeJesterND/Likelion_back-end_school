@@ -1,4 +1,4 @@
-package april.day15;
+package april.day15.genericmethod;
 
 import java.util.List;
 

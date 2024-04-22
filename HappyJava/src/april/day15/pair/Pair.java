@@ -1,4 +1,4 @@
-package april.day15;
+package april.day15.pair;
 
 public class Pair<K, V> {
     private K key;
@@ -23,13 +23,5 @@ public class Pair<K, V> {
 
     public void setValue(V value) {
         this.value = value;
-    }
-
-    public static void main(String[] args) {
-        Pair<String, Integer> pair = new Pair<>("Age", 30);
-        String key = pair.getKey();
-        Integer value = pair.getValue();
-
-
     }
 }

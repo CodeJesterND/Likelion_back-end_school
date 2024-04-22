@@ -1,4 +1,8 @@
-package april.day15;
+package april.day15.genericmethod;
+
+/*
+    해당 클래스는 Number 클래스의 자손들만을 파라미터로 받아드리는 제네릭 메소드이다.
+ */
 
 public class GenericMethodExample2 {
     public static <T extends Number> T max(T x, T y, T z) {
