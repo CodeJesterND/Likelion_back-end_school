@@ -1,4 +1,4 @@
-package com.exam.day01;
+package march.day25;
 
 public class Exam02 {
     /*정수1개과 문자 1개를 입력받아서 예를들어 3 과 * 을 입력 받았다면

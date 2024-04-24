@@ -1,4 +1,4 @@
-package day01;
+package march.day25;
 
 public class Exam01 {
     public static void main(String[] args) {

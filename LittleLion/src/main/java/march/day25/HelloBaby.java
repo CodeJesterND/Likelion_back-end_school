@@ -1,4 +1,4 @@
-package day01;
+package march.day25;
 
 //class 객체의 도면, 설계도, 붕어빵틀
 public class HelloBaby {

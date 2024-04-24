@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12e86a83-c891-4b0a-9423-4ee7c6c7aa17" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../HappyJava/test/march/day25/ClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HappyJava/test/march/day25/ClassTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HappyJava/src/april/day22/EchoClientExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HappyJava/src/april/day22/EchoServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HappyJava/src/april/day22/EchoServer2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HappyJava/src/april/day22/EchoServerExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HappyJava/src/april/day22/EchoServerExam2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day01/Day.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day01/Exam01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day01/Exam02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day01/Exam03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day01/HelloBaby.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day01/UseHelloBaby.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day02/AgeChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day02/MonthChecker.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +28,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -31,6 +48,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.LittleLion [:CounterMain.main()].executor": "Run",
     "Gradle.LittleLion [:MonthChecker.main()].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -48,7 +66,33 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CounterMain (1)">
+    <configuration name="CounterMain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="april.day22.CounterMain" />
+      <module name="LittleLion.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="april.day22.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CounterMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="april.day22.CounterMain" />
+      <module name="LittleLion.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="april.day22.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MonthChecker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="day02.MonthChecker" />
       <module name="LittleLion.main" />
@@ -64,6 +108,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CounterMain (1)" />
+        <item itemvalue="Application.CounterMain" />
         <item itemvalue="Application.MonthChecker" />
       </list>
     </recent_temporary>
@@ -87,6 +133,7 @@
       <workItem from="1712136865575" duration="741000" />
       <workItem from="1712137732059" duration="1000" />
       <workItem from="1712140172548" duration="48000" />
+      <workItem from="1713782072674" duration="8809000" />
     </task>
     <servers />
   </component>
