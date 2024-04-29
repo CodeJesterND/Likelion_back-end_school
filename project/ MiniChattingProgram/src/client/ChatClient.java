@@ -33,13 +33,13 @@ public class ChatClient {
             while (true) {
                 userInput = stdIn.nextLine();
 
+                /*
                 // '/bye'를 입력하면 클라이언트를 종료
                 if ("/bye".equals(userInput)) {
                     out.println(userInput); // 서버에 종료 메시지를 전송
                     break;
                 }
 
-                /*
                 else if ("/clear".equals(userInput)) {
                     clearConsole(); // 콘솔 창을 지우는 메서드 호출
                 }

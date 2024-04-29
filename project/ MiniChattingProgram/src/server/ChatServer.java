@@ -45,7 +45,6 @@ public class ChatServer {
     }
 
     // 클라이언트를 리스트에서 제거하는 메서드
-
     static synchronized void removeClient(ClientHandler client) {
         allClients.remove(client); // 해당 클라이언트를 제거
     }

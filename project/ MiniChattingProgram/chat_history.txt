@@ -1,0 +1,47 @@
+hyoseung: /help
+hyoseung: /users
+hyoseung: /whisper ubin hi
+hyoseung: /list
+hyoseung: /create
+hyoseung: /list
+hyoseung: /exit
+hyoseung: /list
+hyoseung: /create
+ubin: /list
+ubin: /join 2
+ubin: /join 1
+ubin: hi
+ubin: /exit
+ubin: /create
+hyoseung: /exit
+hyoseung: /create
+hyo: /list
+hyo: /create
+hyo: /roomusers
+hyo: /roomusers
+hyo: /exit
+hyoseung: /help
+hyoseung: /users
+hyoseung: /romusers
+hyoseung: /roomusers
+hyoseung: /whisper lion hello
+lion: hi
+hyoseung: study
+hyoseung: /list
+hyoseung: /create
+hyoseung: /exit
+hyoseung: /list
+hyoseung: /create
+lion: /list
+lion: /join 2
+lion: /join 1
+lion: /exit
+hyoseung: /roomusers
+lion: /create
+hyoseung: /exit 
+hyoseung: /create
+hyoseung: /help
+hyoseung: /exit
+hyoseung: /list
+hyoseung: hyo
+hyoseung: /list

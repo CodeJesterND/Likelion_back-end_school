@@ -9,7 +9,11 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class ClientHandler implements Runnable {
+/**
+ * 클라이언트 핸들러는 각 클라이언트의 연결 및 통신을 관리하는 역할을 합니다.
+ * 클라이언트의 닉네임 설정, 채팅 메시지 처리, 명령어 처리 등을 담당합니다.
+ */
+public class ClientHandler implements Runnable{
     private Socket socket; // 클라이언트의 소켓 정보
     private BufferedReader in; // 클라이언트로부터 입력을 받음
     private PrintWriter out; // 클라이언트로 출력함
@@ -17,6 +21,12 @@ public class ClientHandler implements Runnable {
     private int roomId = -1; // 클라이언트의 현재 위치를 나타내는 ID
     private static Set<String> usedNicknames = new HashSet<>(); // 사용 중인 닉네임을 저장하는 Set
 
+    /**
+     * 클라이언트 핸들러를 초기화합니다.
+     * 소켓 연결을 받아들이고, 클라이언트의 입출력 스트림을 설정하고, 닉네임을 요청합니다.
+     *
+     * @param socket 클라이언트와의 연결을 나타내는 소켓 객체
+     */
     public ClientHandler(Socket socket) {
         this.socket = socket;
         try {
@@ -30,6 +40,12 @@ public class ClientHandler implements Runnable {
         }
     }
 
+    /**
+     * 클라이언트로부터 닉네임을 요청하고 중복을 방지하는 메서드입니다.
+     * 클라이언트로부터 입력받은 닉네임이 유효한지, 이미 사용 중인 닉네임인지 확인합니다.
+     * 사용 가능한 닉네임이 입력될 때까지 반복하여 요청합니다.
+     * 유효한 닉네임이 입력되면 해당 닉네임을 설정하고, 사용 중인 닉네임 목록에 추가합니다.
+     */
     // 닉네임 중복을 방지하는 메서드
     private void requestNickname() {
         try {
@@ -94,6 +110,74 @@ public class ClientHandler implements Runnable {
             closeConnection();
         }
     }
+
+    /*
+    @Override
+    public void run() {
+        try {
+            sendMessage("채팅 프로그램에 오신 것을 환영합니다, " + nickname + "!");
+            sendCommands();
+            while (true) {
+                String input = in.readLine();
+                if (input.startsWith("/")) {
+                    handleCommand(input);
+                } else {
+                    handleChatMessage(input);
+                }
+            }
+        } catch (IOException | NullPointerException e) {
+            System.err.println("클라이언트의 연결을 강제로 끊었습니다.");
+            e.printStackTrace();
+        } finally {
+            closeConnection();
+        }
+    }
+
+    /**
+     * 클라이언트로부터 받은 명령어를 처리하는 메서드입니다.
+     * 명령어에 따라 해당하는 기능을 수행합니다.
+     *
+     * @param input 클라이언트로부터 받은 명령어
+    // 명령어 입력 모음 메서드
+    private void handleCommand(String input) {
+        if (input.startsWith("/help")) {
+            sendCommands();
+        } else if (input.startsWith("/users")) {
+            listUsers();
+        } else if (input.startsWith("/whisper")) {
+            whisperToUser(input);
+        } else if (input.startsWith("/create")) {
+            createRoom();
+        } else if (input.startsWith("/list")) {
+            listRooms();
+        } else if (input.startsWith("/join")) {
+            joinRoom(input);
+        } else if (input.startsWith("/roomusers")) {
+            roomListUsers(input);
+        } else if (input.startsWith("/exit")) {
+            exitRoom(input);
+        } else if (input.startsWith("/bye")) {
+            ChatServer.moveClient(roomId, -1, this);
+            ChatServer.removeClient(this);
+        } else {
+            sendMessage("잘못된 형식입니다. /help 참고하거나 명령어를 입력해주세요 :)");
+        }
+    }
+
+    /**
+     * 클라이언트로부터 받은 채팅 메시지를 처리하는 메서드입니다.
+     * 현재 클라이언트가 특정 방에 입장한 상태인 경우에는 해당 방의 모든 사용자에게 메시지를 브로드캐스트합니다.
+     * 만약 클라이언트가 어떤 방에도 입장하지 않은 상태라면, 방에 입장하지 않았음을 알리는 메시지를 해당 클라이언트에게 보냅니다.
+     *
+     * @param input 클라이언트로부터 받은 채팅 메시지
+    private void handleChatMessage(String input) {
+        if (roomId != -1) {
+            ChatServer.broadcast(roomId, nickname + ": " + input, this);
+        } else {
+            sendMessage("방에 입장하지 않았습니다. 명령어를 입력해주세요.");
+        }
+    }
+    */
 
     // 명령어 모음 메서드
     private void sendCommands() {
@@ -206,6 +290,7 @@ public class ClientHandler implements Runnable {
     private void roomListUsers(String input) {
         if (roomId == -1) {
             sendMessage("현재 방에 속해 있지 않습니다.");
+            return;
         }
 
         List<ClientHandler> roomClients = ChatServer.getRoomClients(roomId);
