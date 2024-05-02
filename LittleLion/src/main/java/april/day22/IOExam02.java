@@ -1,4 +1,4 @@
-package com.exam.day06;
+package april.day22;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;

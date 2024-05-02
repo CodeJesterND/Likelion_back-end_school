@@ -1,4 +1,4 @@
-package com.exam.day06;
+package april.day22;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

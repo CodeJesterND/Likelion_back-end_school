@@ -1,4 +1,4 @@
-package com.exam.day06;
+package april.day22;
 
 public class ThreadExam01 {
     public static void main(String[] args) {

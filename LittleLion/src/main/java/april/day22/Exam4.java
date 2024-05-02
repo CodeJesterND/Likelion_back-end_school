@@ -1,4 +1,4 @@
-package com.exam.day06;
+package april.day22;
 class CounterRunnable implements Runnable {
     private final SynchronizedCounter counter;
     private final int maxCount;

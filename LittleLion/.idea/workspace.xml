@@ -5,19 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="12e86a83-c891-4b0a-9423-4ee7c6c7aa17" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../HappyJava/src/april/day22/EchoClientExam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HappyJava/src/april/day22/EchoServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HappyJava/src/april/day22/EchoServer2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HappyJava/src/april/day22/EchoServerExam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HappyJava/src/april/day22/EchoServerExam2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day01/Day.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day01/Exam01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day01/Exam02.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day01/Exam03.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day01/HelloBaby.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day01/UseHelloBaby.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day02/AgeChecker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day02/MonthChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/april/day22/Exam4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/april/day22/Exam4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/april/day22/IOExam01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/april/day22/IOExam01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/april/day22/IOExam02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/april/day22/IOExam02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/april/day22/IOExam03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/april/day22/IOExam03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/april/day22/ThreadExam01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/april/day22/ThreadExam01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/april/day22/ThreadExam02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/april/day22/ThreadExam02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/april/day29/client/ChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/april/day29/client/ChatClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/april/day29/client/ServerMessageReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/april/day29/client/ServerMessageReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/april/day29/server/ChatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/april/day29/server/ChatHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/april/day29/server/ChatRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/april/day29/server/ChatRoom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/april/day29/server/ChatRoomManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/april/day29/server/ChatRoomManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/april/day29/server/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/april/day29/server/ChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/april/day29/server/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/april/day29/server/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/april/day29/server/ClientManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/april/day29/server/ClientManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/MiniChattingProgram/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project/MiniChattingProgram/.idea/modules.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,26 +48,26 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.LittleLion [:CounterMain.main()].executor": "Run",
-    "Gradle.LittleLion [:MonthChecker.main()].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.LittleLion [:CounterMain.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.LittleLion [:MonthChecker.main()].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.CounterMain (1)">
     <configuration name="CounterMain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="april.day22.CounterMain" />
@@ -134,6 +136,7 @@
       <workItem from="1712137732059" duration="1000" />
       <workItem from="1712140172548" duration="48000" />
       <workItem from="1713782072674" duration="8809000" />
+      <workItem from="1714664697851" duration="173000" />
     </task>
     <servers />
   </component>
