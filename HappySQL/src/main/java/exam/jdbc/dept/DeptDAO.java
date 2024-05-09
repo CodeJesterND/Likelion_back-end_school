@@ -27,6 +27,7 @@ public class DeptDAO {
             ps.setString(3, dept.getLoc());
             int rowCount = ps.executeUpdate();
             success = (rowCount > 0); // 영향 받은 행이 1 이상이면 성공으로 간주
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -83,6 +84,7 @@ public class DeptDAO {
             ps.setInt(3, dept.getDeptno());
             int rowsAffected = ps.executeUpdate();
             isSuccess = rowsAffected > 0;
+
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -100,6 +102,7 @@ public class DeptDAO {
             ps.setInt(1, deptno);
             int rowsAffected = ps.executeUpdate();
             isSuccess = rowsAffected > 0;
+
         } catch (SQLException e) {
             e.printStackTrace();
         }

@@ -5,10 +5,10 @@ import java.util.List;
 public class DeptMain {
     public static void main(String[] args) {
         // DBConnectionManager 생성
-        DBConnectionManager DBConnectionManager = new DBConnectionManager("jdbc:mysql://localhost:3306/exampledb", "root", "240311");
+        DBConnectionManager dbConnectionManager = new DBConnectionManager("jdbc:mysql://localhost:3306/exampledb", "root", "240311");
 
         // DeptDAO 생성
-        DeptDAO deptDAO = new DeptDAO(DBConnectionManager);
+        DeptDAO deptDAO = new DeptDAO(dbConnectionManager);
 
         // DeptService 생성
         DeptService deptService = new DeptService(deptDAO);
