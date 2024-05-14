@@ -1,11 +1,19 @@
-package sample;
+package sample.bean;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class MyBean {
     private String name;
     private int count;
 
     public MyBean() {
         System.out.println("MyBean 생성!! ");
+    }
+
+    public MyBean(String name, int count) {
+        this.name = name;
+        this.count = count;
     }
 
     public String getName() {
@@ -26,6 +34,9 @@ public class MyBean {
 
     @Override
     public String toString() {
-        return "name : " + name + ", 개수 : " + count;
+        return "MyBean{" +
+                "name='" + name + '\'' +
+                ", count=" + count +
+                '}';
     }
 }
