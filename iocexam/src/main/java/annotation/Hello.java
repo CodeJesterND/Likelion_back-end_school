@@ -1,2 +1,8 @@
-package annotation;public class print {
+package annotation;
+
+public class Hello {
+    @Count100
+    public void print(){
+        System.out.println("hello!!");
+    }
 }

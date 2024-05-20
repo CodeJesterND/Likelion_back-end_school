@@ -1,4 +1,4 @@
-package com.example.profile;
+package sample.profile;
 
 public class DataService {
     private String environment;
