@@ -39,18 +39,18 @@ public class SessionController {
 //    }
 
     //HttpSession을 직접 이용한 예
-//    @GetMapping("/visit2")
-//    public String trackVisit(HttpSession session, Model model) {
-//        // 세션으로 부터 방문 횟수를 얻어온다.
-//        Integer visitCount = (Integer) session.getAttribute("visitCount");
-//        //Integer visitCount = (Integer) model.getAttribute("visitCount");
-//        if (visitCount == null) {
-//            visitCount = 0;
-//        }
-//        visitCount++;
-//        session.setAttribute("visitCount", visitCount);
-//        //model.addAttribute("visitCount", visitCount);
-//
-//        return "visit2";
-//    }
+    @GetMapping("/visit2")
+    public String trackVisit(HttpSession session, Model model) {
+        // 세션으로 부터 방문 횟수를 얻어온다.
+        Integer visitCount = (Integer) session.getAttribute("visitCount");
+        //Integer visitCount = (Integer) model.getAttribute("visitCount");
+        if (visitCount == null) {
+            visitCount = 0;
+        }
+        visitCount++;
+        session.setAttribute("visitCount", visitCount);
+        //model.addAttribute("visitCount", visitCount);
+
+        return "visit2";
+    }
 }
