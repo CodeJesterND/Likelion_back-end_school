@@ -6,8 +6,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* 화면 높이를 최소 높이로 설정하여 내용이 화면 중앙에 오도록 합니다. */
-    margin: 0; /* 기본 마진 제거 */
+    min-height: 100vh;
+    margin: 0;
     margin-top: -10px;
     background-color: #f0f0f0;
 }
@@ -25,8 +25,8 @@ body {
 /* 부모 요소에 대한 CSS */
 .parent-container {
     display: flex;
-    justify-content: center; /* 가로 방향 가운데 정렬을 위한 속성 추가 */
-    align-items: center; /* 세로 방향 가운데 정렬을 위한 속성 추가 */
+    justify-content: center;
+    align-items: center;
 }
 
 /* 게시글 상세 조회 컨테이너 호버 효과 */

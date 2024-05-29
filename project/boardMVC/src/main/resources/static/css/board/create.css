@@ -57,7 +57,7 @@ textarea {
 input[type="text"]:hover,
 input[type="password"]:hover,
 textarea:hover {
-    border-color: #4CAF50; /* 호버시 테두리 색상 변경 */
+    border-color: #4CAF50;
 }
 
 /*!* 입력 필드 포커스시 테두리 색상 변경 *!*/

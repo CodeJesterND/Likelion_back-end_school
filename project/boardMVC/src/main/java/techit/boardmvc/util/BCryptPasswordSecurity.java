@@ -12,4 +12,4 @@ public class BCryptPasswordSecurity {
     public static boolean verifyPassword(String rawPassword, String hashedPassword) {
         return passwordEncoder.matches(rawPassword, hashedPassword);
     }
-    }
+}
