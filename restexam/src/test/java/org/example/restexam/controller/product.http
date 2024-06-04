@@ -1,0 +1,33 @@
+### POST
+POST http://localhost/api/products
+Content-Type: application/json
+
+{
+  "name": "pen",
+  "price": 9.99
+}
+
+### GET /api/products
+GET http://localhost/api/products
+Accept: application/json
+
+### GET /api/products/{id}
+GET http://localhost/api/products/1
+Accept: application/json
+
+### PUT
+PUT http://localhost/api/products/1
+Content-Type: application/json
+
+{
+  "name": "new pen",
+  "price": 8.88
+}
+
+### DELETE
+DELETE http://localhost/api/products/1
+Content-Type: application/json
+
+{
+  "id": 1
+}
