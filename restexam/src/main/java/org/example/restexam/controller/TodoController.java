@@ -36,6 +36,7 @@ public class TodoController {
     public Todo updateTodo(@RequestBody Todo todo){
         return todoService.updateTodo(todo.getId());
     }
+
     @DeleteMapping
     public String deleteTodo(@RequestBody Todo todo){
         todoService.deleteTodo(todo.getId());
